@@ -41,7 +41,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         //recycler view에 반복될 아이템 레이아웃 연결
         //Log.d(TAG,"onCreateViewHolder()");
 
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.message_item,null);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.message_item,parent,false);
         return new ViewHolder(v);
     }
 
