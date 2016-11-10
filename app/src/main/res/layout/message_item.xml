@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/other_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:id="@+id/other_normal_layout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/profile_pic"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                        android:background="@drawable/profile"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="#000000"
+                            android:text="테스트"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxWidth="200dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bubble_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="안녕하세요 테스트 메세지"
+                            android:id="@+id/other_normal_text" />
+                        <TextView
+                            android:textSize="10sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/other_time"
+                            android:text="오후 15:13"/>
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/other_more_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="55dp"
+                            android:maxWidth="200dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bubble_other_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="테스트 메세지... 메세지 같은 시간에 더 추가될 시   배경 레이아웃"
+                            android:id="@+id/other_more_text" />
+                        <TextView
+                            android:id="@+id/other_more_time"
+                            android:textSize="10sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="오후 15:13"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/my_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/my_normal_layout"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/my_time"
+                            android:textSize="10sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="오후 15:15"/>
+                        <View
+                            android:layout_height="0dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="0"
+                            />
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:maxWidth="200dp"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:background="@drawable/bubble_my"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="this is Test"
+                            android:id="@+id/my_normal_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_more_layout"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/my_more_time"
+                            android:textSize="10sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="오후 15:15"/>
+
+                        <TextView
+                            android:paddingLeft="10dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:maxWidth="200dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bubble_my_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:text="More Message Layout"
+                            android:id="@+id/my_more_text" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
